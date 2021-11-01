@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-with-nodemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "./scripts.sh start",
+    "dev": "./scripts.sh start",
+    "build": "./scripts.sh build",
+    "patch": "./scripts.sh patch",
+    "gulp": "echo 'do nothing'",
+    "test": "./scripts.sh test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "nodemon": "2.0.7",
+    "debug": "4.3.2",
+    "newrelic": "8.5.0",
+    "dnscache": "1.0.2",
+    "nunjucks": "3.2.3"
+  }
+}

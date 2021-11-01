@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="/" />
+    <title>{{ title | safe | striptags }}</title>
+
+    <script id="antiClickjack">
+      if (self !== top) {
+        top.location = self.location
+      }
+    </script>
+  </head>
+
+<body>
