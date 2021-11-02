@@ -8,7 +8,6 @@
     "dev": "./scripts.sh start",
     "build": "./scripts.sh build",
     "patch": "./scripts.sh patch",
-    "gulp": "echo 'do nothing'",
     "test": "./scripts.sh test"
   },
   "keywords": [],

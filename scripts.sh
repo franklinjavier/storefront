@@ -2,21 +2,19 @@
 set -e
 
 export APP_NAME=storefront
+export DEBUG=storefront:*
 
 case "$1" in
   start)
     echo 'Starting...'
-    export DEBUG=storefront:*
     export NODE_ENV=dev
-    export NODE_PATH=./server
     export LOGGER_LEVEL=debug
     nodemon server/bin/www $ENV
   ;;
   test)
-    export DEBUG=storefront:*
-    export LOGGER_LEVEL=debug
     export NODE_ENV=dev
-    export NODE_PATH=./server
+    export LOGGER_LEVEL=debug
+    jest
   ;;
   build)
     echo 'Building...'
